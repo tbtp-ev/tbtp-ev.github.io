@@ -236,7 +236,7 @@ layout: default
         </table>
     {% endif %}
     
-    {% if page.car_noise_70_kmh_db != nil and page.car_noise_90_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
+    {% if page.car_noise_80_kmh_db != nil and page.car_noise_100_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
         <h2 class="clickable-header top-level-header">Noise test</h2>
         You can compare the noise test results of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-noise.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_noise-test.html">here.</a><br><br>
         <table style="width: 100%;" id="data_table">
@@ -259,8 +259,8 @@ layout: default
         <tbody>
                <tr>
                     <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
-                    <td markdown="span">{{ page.car_noise_70_kmh_db }} dB</td>
-                    <td markdown="span">{{ page.car_noise_90_kmh_db }} dB</td>
+                    <td markdown="span">{{ page.car_noise_80_kmh_db }} dB</td>
+                    <td markdown="span">{{ page.car_noise_100_kmh_db }} dB</td>
                     <td markdown="span">{{ page.car_noise_120_kmh_db }} dB</td>
                     <td markdown="span"><a href="{{ page.car_noise_vsource }}" target="_blank">Testvideo</a></td>
                 </tr>
@@ -269,7 +269,7 @@ layout: default
     {% endif %}
     
     
-    {% if page.car_noise_70_kmh_db != nil and page.car_noise_90_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
+    {% if page.car_noise_80_kmh_db != nil and page.car_noise_100_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
         <h2 class="clickable-header top-level-header">Weight distribution test</h2>
         You can compare the weight distribution of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-weight.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_noise-weight.html">here.</a><br><br>
         <table style="width: 100%;" id="data_table">

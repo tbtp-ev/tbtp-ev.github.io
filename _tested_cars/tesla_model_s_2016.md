@@ -1,9 +1,9 @@
 ---
-car_manufacturer: 
-car_name: 
-car_name_subtext:
-car_release_year:
-car_added_to_tbdp:
+car_manufacturer: Tesla
+car_name: Model S
+car_name_subtext: Facelift 2016
+car_release_year: 
+car_added_to_tbdp: 
 car_last_change_date:
 battery_size_available_kwh: 
 battery_size_rated_kwh: 
@@ -29,8 +29,8 @@ summer_range_90kmh_km:
 summer_range_120kmh_km: 
 summer_range_vsource: 
 bananaboxes_trunk: 
-bananaboxes_folded_seats: 
-bananaboxes_vsource: 
+bananaboxes_folded_seats: 22
+bananaboxes_vsource: https://www.youtube.com/watch?v=6Zb6-QnUNqc
 car_general_review_vsource:
 car_noise_80_kmh_db: 
 car_noise_100_kmh_db: 

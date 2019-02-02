@@ -1,9 +1,9 @@
 ---
-car_manufacturer: 
-car_name: 
-car_name_subtext:
-car_release_year:
-car_added_to_tbdp:
+car_manufacturer: Tesla
+car_name: Model X
+car_name_subtext: 6 Seater
+car_release_year: 
+car_added_to_tbdp: 
 car_last_change_date:
 battery_size_available_kwh: 
 battery_size_rated_kwh: 
@@ -28,9 +28,9 @@ winter_range_vsource:
 summer_range_90kmh_km: 
 summer_range_120kmh_km: 
 summer_range_vsource: 
-bananaboxes_trunk: 
-bananaboxes_folded_seats: 
-bananaboxes_vsource: 
+bananaboxes_trunk: 10
+bananaboxes_folded_seats: 23
+bananaboxes_vsource: https://www.youtube.com/watch?v=Lffnh8PLl5g
 car_general_review_vsource:
 car_noise_80_kmh_db: 
 car_noise_100_kmh_db: 

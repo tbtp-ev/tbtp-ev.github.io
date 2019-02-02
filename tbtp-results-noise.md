@@ -29,11 +29,11 @@ If you want to know a detailed explanation how the data for test results is gath
 <tbody>
 
 {% for item in site.tested_cars %}
-    {% if item.car_noise_70_kmh_db != nil and item.car_noise_90_kmh_db != nil and item.car_noise_120_kmh_db != nil %}
+    {% if item.car_noise_80_kmh_db != nil and item.car_noise_100_kmh_db != nil and item.car_noise_120_kmh_db != nil %}
         <tr>
             <td markdown="span">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</td>
-            <td markdown="span">{{ item.car_noise_70_kmh_db }} dB</td>
-            <td markdown="span">{{ item.car_noise_90_kmh_db }} dB</td>
+            <td markdown="span">{{ item.car_noise_80_kmh_db }} dB</td>
+            <td markdown="span">{{ item.car_noise_100_kmh_db }} dB</td>
             <td markdown="span">{{ item.car_noise_120_kmh_db }} dB</td>
             <td markdown="span"><a href="{{ item.car_noise_vsource }}" target="_blank">Testvideo</a></td>
         </tr>
