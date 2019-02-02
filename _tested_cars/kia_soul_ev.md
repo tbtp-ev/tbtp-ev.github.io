@@ -32,8 +32,8 @@ bananaboxes_trunk: 6
 bananaboxes_folded_seats: 21
 bananaboxes_vsource: https://www.youtube.com/watch?v=elH0sCb4leI
 car_general_review_vsource:
-car_noise_80_kmh_db: 64,9
-car_noise_100_kmh_db: 67,1
-car_noise_120_kmh_db: 69,8
+car_noise_80_kmh_db: 64.9
+car_noise_100_kmh_db: 67.1
+car_noise_120_kmh_db: 69.8
 car_noise_vsource: https://www.youtube.com/watch?v=74HxZwTsxY0
 ---
