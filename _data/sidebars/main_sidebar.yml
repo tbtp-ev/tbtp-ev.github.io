@@ -1,0 +1,74 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: TBTP Overview
+  version: 
+  folders:
+
+  - title: TBTP Explained
+    output: web
+    folderitems:
+
+    - title: Overview
+      url: /index.html
+      output: web
+      type: homepage
+
+    - title: Range Test
+      url: /tbtp_explained_range-test.html
+      output: web
+
+    - title: Consumption Test
+      url: /tbtp_explained_consumption-test.html
+      output: web
+      
+    - title: Weight Distribution Test
+      url: /tbtp_explained_weight-test.html
+      output: web
+      
+    - title: Battery Capacity Test
+      url: /tbtp_explained_battery-test.html
+      output: web
+      
+    - title: Banana Box Test
+      url: /tbtp_explained_bananabox-test.html
+      output: web
+      
+    - title: Noise Test
+      url: /tbtp_explained_noise-test.html
+      output: web
+      
+  - title: TBTP Results Overview
+    output: web
+    folderitems:
+
+    - title: Range Test Results
+      url: /tbtp-results-range.html
+      output: web
+      type: homepage
+      
+    - title: Consumption Test Results
+      url: /tbtp-results-consumption.html
+      output: web
+      type: homepage
+      
+    - title: Weight Distribution Test Results
+      url: /tbtp-results-weight.html
+      output: web
+      type: homepage
+      
+    - title: Battery Capacity Test Results
+      url: /tbtp-results-battery.html
+      output: web
+      type: homepage
+
+    - title: Banana Box Test Results
+      url: /tbtp-results-bananabox.html
+      output: web
+      type: homepage
+
+    - title: Noise Test Results
+      url: /tbtp-results-noise.html
+      output: web
+      type: homepage

@@ -1,0 +1,35 @@
+topnav_title: TBTP - EV Testing Advanced
+site_title: Tesla Bjørn Test Procedure - EV Tests Advanced
+
+exclude:
+  - .idea/
+  - .gitignore
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      sidebar: main_sidebar
+      topnav: topnav
+
+  -
+    scope:
+      path: ""
+      type: "tested_cars"
+    values:
+      layout: "car_tbtp_result"
+      sidebar: main_sidebar
+      topnav: topnav
+      
+sidebars:
+- main_sidebar
+
+collections:
+ tested_cars:
+  output: true
+  permalink: :name
+
+description: "tbd"

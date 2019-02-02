@@ -1,0 +1,308 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</h1>
+        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.author %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">/ {{ page.author }}</span></span>{% endif %}{% if page.tags != null %}
+            {% assign projectTags = site.data.tags.allowed-tags %}
+            {% for tag in page.tags %}
+            {% if projectTags contains tag %}
+            <a href="{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+    
+    {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} has been added to TBTP in {{ page.car_added_to_tbdp }}. If models with different battery sizes have been tested you can find the test results in a separate entry in the navbar on the left side. A general car review with most tests covered can be found below.
+    
+    {% if page.car_general_review_vsource != nil %}
+        <br><br>
+        <p style="text-align: center;"><iframe width="560" height="315" src="{{ page.car_general_review_vsource }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    {% endif %}   
+    
+    {% if page.summer_range_90kmh_km != nil or page.summer_range_120kmh_km %}    
+        <h2 class="clickable-header top-level-header">Summer range</h2>
+        You can compare the summer range of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-range.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_range-test.html">here.</a><br><br>
+        <table style="width: 100%;">
+        <colgroup>
+        <col width="30%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="30%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>Range 90 km/h</th>
+        <th>Range 120 km/h</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    {% if page.summer_range_90kmh_km != nil %}
+                        <td markdown="span">{{ page.summer_range_90kmh_km }} km</td>
+                    {% else %}
+                        <td markdown="span">-</td>
+                    {% endif %}
+                    
+                    {% if page.summer_range_120kmh_km != nil %}
+                        <td markdown="span">{{ page.summer_range_120kmh_km }} km</td>
+                    {% else %}
+                        <td markdown="span">-</td>
+                    {% endif %}
+                    
+                    <td markdown="span"><a href="{{ page.summer_range_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    
+      {% if page.winter_range_90kmh_km != nil or page.winter_range_120kmh_km %}    
+        <h2 class="clickable-header top-level-header">Winter range</h2>
+                You can compare the winter range of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-range.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_range-test.html">here.</a><br><br>
+        <table style="width: 100%;">
+        <colgroup>
+        <col width="30%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="30%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>Range 90 km/h</th>
+        <th>Range 120 km/h</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    {% if page.winter_range_90kmh_km != nil %}
+                        <td markdown="span">{{ page.winter_range_90kmh_km }} km</td>
+                    {% else %}
+                        <td markdown="span">-</td>
+                    {% endif %}
+                    
+                    {% if page.winter_range_120kmh_km != nil %}
+                        <td markdown="span">{{ page.winter_range_120kmh_km }} km</td>
+                    {% else %}
+                        <td markdown="span">-</td>
+                    {% endif %}
+                    
+                    <td markdown="span"><a href="{{ page.winter_range_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    {% if page.summer_consumption_90kmh_wh-km != nil or page.summer_consumption_120kmh_wh-km != nil or page.summer_consumption_90kmh_wh-mi != nil or page.summer_consumption_120kmh_wh-mi != nil %}    
+        <h2 class="clickable-header top-level-header">Summer range</h2>
+        You can compare the summer consumption of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-consumption.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_consumption-test.html">here.</a><br><br>
+        <table style="width: 100%;">
+        <colgroup>
+        <col width="23%" />
+        <col width="13%" />
+        <col width="13%" />
+        <col width="13%" />
+        <col width="13%" />
+        <col width="30%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>90 km/h</th>
+        <th>90 km/h</th>
+        <th>120 km/h</th>
+        <th>120 km/h</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    <td markdown="span">{{ page.summer_consumption_90kmh_wh-km }} Wh/km</td>
+                    <td markdown="span">{{ page.summer_consumption_90kmh_wh-mi }} Wh/mi</td>
+                    <td markdown="span">{{ page.summer_consumption_120kmh_wh-km }} Wh/km</td>
+                    <td markdown="span">{{ page.summer_consumption_120kmh_wh-mi }} Wh/mi</td>
+                    <td markdown="span"><a href="{{ page.summer_consumption_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    
+     {% if page.winter_consumption_90kmh_wh-km != nil or page.winter_consumption_120kmh_wh-km != nil or page.winter_consumption_90kmh_wh-mi != nil or page.winter_consumption_120kmh_wh-mi != nil %}    
+        <h2 class="clickable-header top-level-header">Winter range</h2>
+        You can compare the winter consumption of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-consumption.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_consumption-test.html">here.</a><br><br>
+        <table style="width: 100%;">
+        <colgroup>
+        <col width="23%" />
+        <col width="13%" />
+        <col width="13%" />
+        <col width="13%" />
+        <col width="13%" />
+        <col width="30%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>90 km/h</th>
+        <th>90 km/h</th>
+        <th>120 km/h</th>
+        <th>120 km/h</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    <td markdown="span">{{ page.winter_consumption_90kmh_wh-km }} Wh/km</td>
+                    <td markdown="span">{{ page.winter_consumption_90kmh_wh-mi }} Wh/mi</td>
+                    <td markdown="span">{{ page.winter_consumption_120kmh_wh-km }} Wh/km</td>
+                    <td markdown="span">{{ page.winter_consumption_120kmh_wh-mi }} Wh/mi</td>
+                    <td markdown="span"><a href="{{ page.winter_consumption_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    {% if page.battery_size_rated_kwh != nil and page.battery_size_available_kwh != nil %}    
+        <h2 class="clickable-header top-level-header">Battery capacity</h2>
+        You can compare the battery capacity of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-battery.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_battery-test.html">here.</a><br><br>
+        <table style="width: 100%;">
+        <colgroup>
+        <col width="25%" />
+        <col width="30%" />
+        <col width="30%" />
+        <col width="15%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>Battery Capacity Rated</th>
+        <th>Battery Capacity Available</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+               <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    <td markdown="span">{{ page.battery_size_rated_kwh }} kWh</td>
+                    <td markdown="span">{{ page.battery_size_available_kwh }} kWh</td>
+                    <td markdown="span"><a href="{{ page.battery_size_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    
+    {% if page.bananaboxes_trunk != nil and page.bananaboxes_folded_seats != nil %}    
+        <h2 class="clickable-header top-level-header">Banana box test</h2>
+        You can compare the banana box test results of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-bananabox.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_bananabox-test.html">here.</a><br><br>
+        <table style="width: 100%;" id="data_table">
+        <colgroup>
+        <col width="30%" />
+        <col width="25%" />
+        <col width="25%" />
+        <col width="20%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>Boxes Trunk / Frunk</th>
+        <th>Boxes Folded Seats</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+               <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    <td markdown="span">{{ page.bananaboxes_trunk }}</td>
+                    <td markdown="span">{{ page.bananaboxes_folded_seats }}</td>
+                    <td markdown="span"><a href="{{ page.bananaboxes_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    {% if page.car_noise_70_kmh_db != nil and page.car_noise_90_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
+        <h2 class="clickable-header top-level-header">Noise test</h2>
+        You can compare the noise test results of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-noise.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_noise-test.html">here.</a><br><br>
+        <table style="width: 100%;" id="data_table">
+        <colgroup>
+        <col width="30%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="25%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>70 km/h</th>
+        <th>90 km/h</th>
+        <th>120 km/h</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+               <tr>
+                    <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                    <td markdown="span">{{ page.car_noise_70_kmh_db }} dB</td>
+                    <td markdown="span">{{ page.car_noise_90_kmh_db }} dB</td>
+                    <td markdown="span">{{ page.car_noise_120_kmh_db }} dB</td>
+                    <td markdown="span"><a href="{{ page.car_noise_vsource }}" target="_blank">Testvideo</a></td>
+                </tr>
+        </tbody>
+        </table>
+    {% endif %}
+    
+    
+    {% if page.car_noise_70_kmh_db != nil and page.car_noise_90_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
+        <h2 class="clickable-header top-level-header">Weight distribution test</h2>
+        You can compare the weight distribution of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-weight.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_noise-weight.html">here.</a><br><br>
+        <table style="width: 100%;" id="data_table">
+        <colgroup>
+        <col width="30%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="25%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Car Model</th>
+        <th>Total</th>
+        <th>Front Axle</th>
+        <th>Rear Axle</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+              <tr>
+                <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
+                <td markdown="span">{{ page.weight_total }} kg</td>
+                <td markdown="span">{{ page.weight_front_axle }} kg</td>
+                <td markdown="span">{{ page.weight_rear_axle }} kg</td>
+                <td markdown="span"><a href="{{ page.weight_vsource }}" target="_blank">Testvideo</a></td>
+            </tr>
+        </tbody>
+        </table>
+    {% endif %}
+        
+    </div>
+
+</article>
+
+{% include footer.html %}
