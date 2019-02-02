@@ -32,9 +32,21 @@ If you want to know a detailed explanation how the data for test results is gath
     {% if item.weight_total != nil or item.weight_front_axle != nil or item.weight_rear_axle != nil %}
         <tr>
             <td markdown="span">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</td>
-            <td markdown="span">{{ item.weight_total }} kg</td>
-            <td markdown="span">{{ item.weight_front_axle }} kg</td>
-            <td markdown="span">{{ item.weight_rear_axle }} kg</td>
+            {% if item.weight_total != nil %}
+                <td markdown="span">{{ item.weight_total }} kg</td>
+            {% else %}
+                <td markdown="span">-</td>
+            {% endif %}
+            {% if item.weight_front_axle != nil %}
+                <td markdown="span">{{ item.weight_front_axle }} kg</td>
+            {% else %}
+                <td markdown="span">-</td>
+            {% endif %}
+            {% if item.weight_rear_axle != nil %}
+                <td markdown="span">{{ item.weight_rear_axle }} kg</td>
+            {% else %}
+                <td markdown="span">-</td>
+            {% endif %}
             <td markdown="span"><a href="{{ item.weight_vsource }}" target="_blank">Testvideo</a></td>
         </tr>
     {% endif %}
