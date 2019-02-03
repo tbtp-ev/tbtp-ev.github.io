@@ -49,7 +49,7 @@
       
       <li>
           <a href="#">Detailed Test Results</a>
-          <ul data-index="2" style="display: none;">
+          <ul>
                 {% assign last_manufacturer = "" %}
                 {% for item in site.tested_cars %}
                     {% if last_manufacturer != item.car_manufacturer %}
@@ -58,11 +58,16 @@
                         {% endif %}
                     {% endif %}
                     {% if last_manufacturer != item.car_manufacturer %}
-                        <li><a href="#">{{ item.car_manufacturer }}</a><ul style="display: none;">
+                        <li class="subfolders"><a href="#">{{ item.car_manufacturer }}</a><ul>
                     {% endif %}
                     
                     {% assign last_manufacturer = item.car_manufacturer %}
-                    <li><a href="{{ item.url | replace: "/", "" }}.html">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</a></li>
+                        {% if page.url == item.url | replace: "/", "" | append: ".html" %}
+                            <li class="active">
+                        {% else %}
+                           <li>
+                        {% endif %}
+                        <a href="{{ item.url | replace: "/", "" | append: ".html" }}">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</a></li>
               {% endfor %}
             </ul>
       </li>
