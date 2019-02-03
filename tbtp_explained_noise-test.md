@@ -11,7 +11,7 @@ During the noise test the sound level inside the car cabin is being recorded whi
 ## Test Example
 To learn more about the procedure of the nosie test you can watch the video below.
 
-<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S9yXOxWVFAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<div class="video-container-wrapper"><div style="text-align: center;" class="video-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S9yXOxWVFAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 
 ## Recorded Test Results
 All recorded noise tests of every car tested and listed here can be found on the [noise test results overview](tbtp-results-noise.html).

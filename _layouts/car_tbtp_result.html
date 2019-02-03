@@ -24,7 +24,7 @@ layout: default
     
     {% if page.car_general_review_vsource != nil %}
         <br><br>
-        <p style="text-align: center;"><iframe width="560" height="315" src="{{ page.car_general_review_vsource }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        <div class="video-container-wrapper"><div style="text-align: center;" class="video-container"><iframe width="560" height="315" src="{{ page.car_general_review_vsource }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
     {% endif %}   
     
     {% if page.summer_range_90kmh_km != nil or page.summer_range_120kmh_km %}    

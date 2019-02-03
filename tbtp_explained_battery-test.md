@@ -11,7 +11,7 @@ Similar to the [range test](tbtp_explained_range-test.html), which is often done
 ## Test Example
 To learn more about the procedure of the range test you can watch the video below.
 
-<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6YmvmPR7aZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<div class="video-container-wrapper"><div style="text-align: center;" class="video-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6YmvmPR7aZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 
 ## Recorded Test Results
 All recorded battery capacity tests of every car tested and listed here can be found on the [battery capacity test results overview](tbtp-results-battery.html).

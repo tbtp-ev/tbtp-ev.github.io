@@ -11,7 +11,7 @@ The banana box test is divided into two parts: First as many banana boxes as pos
 ## Test Example
 To learn more about the procedure of the banana box test you can watch the below video of the Audi e-tron's banana box test.
 
-<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2IYpsPTTZ_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<div class="video-container-wrapper"><div style="text-align: center;" class="video-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2IYpsPTTZ_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 
 ## Recorded Test Results
 All recorded banana box tests of every car tested and listed here can be found on the [banana box test results overview](tbtp-results-bananabox.html).
