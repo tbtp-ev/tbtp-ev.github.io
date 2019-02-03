@@ -8,7 +8,7 @@ permalink: tbtp-results-consumption.html
 ## Test Procedure
 If you want to know a detailed explanation how the data for test results is gathered please visit the [consumption test explained](tbtp_explained_consumption-test.html) page. You should also click on 'Testvideo' in the results table below if you want to watch the detailed test videos by Bjørn which are used as reference.
 
-## winter consumption for tested cars
+## Summer consumption for tested cars
 <table style="width: 100%;" id="data_table_1">
 <colgroup>
 <col width="23%" />
@@ -31,30 +31,30 @@ If you want to know a detailed explanation how the data for test results is gath
 <tbody>
 
 {% for item in site.tested_cars %}
-    {% if item.winter_consumption_90kmh_wh-km != nil or item.winter_consumption_120kmh_wh-km != nil or item.winter_consumption_90kmh_wh-mi != nil or item.winter_consumption_120kmh_wh-mi != nil %}
+    {% if item.summer_consumption_90kmh_wh-km != nil or item.summer_consumption_120kmh_wh-km != nil or item.summer_consumption_90kmh_wh-mi != nil or item.summer_consumption_120kmh_wh-mi != nil %}
         <tr>
             <td markdown="span">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</td>
-            {% if item.winter_consumption_90kmh_wh-km != nil %}
-                <td markdown="span">{{ item.winter_consumption_90kmh_wh-km }}  Wh/km</td>
+            {% if item.summer_consumption_90kmh_wh-km != nil %}
+                <td markdown="span">{{ item.summer_consumption_90kmh_wh-km }}  Wh/km</td>
             {% else %}
                 <td markdown="span">-</td>
             {% endif %}
-            {% if item.winter_consumption_90kmh_wh-mi != nil %}
-                <td markdown="span">{{ item.winter_consumption_90kmh_wh-mi }}  Wh/mi</td>
+            {% if item.summer_consumption_90kmh_wh-mi != nil %}
+                <td markdown="span">{{ item.summer_consumption_90kmh_wh-mi }}  Wh/mi</td>
             {% else %}
                 <td markdown="span">-</td>
             {% endif %}
-            {% if item.winter_consumption_120kmh_wh-km != nil %}
-                <td markdown="span">{{ item.winter_consumption_120kmh_wh-km }}  Wh/km</td>
+            {% if item.summer_consumption_120kmh_wh-km != nil %}
+                <td markdown="span">{{ item.summer_consumption_120kmh_wh-km }}  Wh/km</td>
             {% else %}
                 <td markdown="span">-</td>
             {% endif %}
-            {% if item.winter_consumption_120kmh_wh-mi != nil %}
-                <td markdown="span">{{ item.winter_consumption_120kmh_wh-mi }}  Wh/mi</td>
+            {% if item.summer_consumption_120kmh_wh-mi != nil %}
+                <td markdown="span">{{ item.summer_consumption_120kmh_wh-mi }}  Wh/mi</td>
             {% else %}
                 <td markdown="span">-</td>
             {% endif %}
-            <td markdown="span"><a href="{{ item.winter_consumption_vsource }}" target="_blank">Testvideo</a></td>
+            <td markdown="span"><a href="{{ item.summer_consumption_vsource }}" target="_blank">Testvideo</a></td>
         </tr>
     {% endif %}
 {% endfor %}
