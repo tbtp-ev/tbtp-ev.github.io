@@ -2,16 +2,16 @@
 car_manufacturer: Kia
 car_name: e-Niro
 car_name_subtext:
-car_release_year:
+car_release_year: 2018
 car_added_to_tbdp: 2018
 car_last_change_date:
 battery_size_available_kwh: 
 battery_size_rated_kwh: 
 battery_size_vsource: 
-weight_total: 
-weight_front_axle: 
-weight_rear_axle: 
-weight_vsource: 
+weight_total: 1860
+weight_front_axle: 1020
+weight_rear_axle: 840
+weight_vsource: https://www.youtube.com/watch?v=RjFE1mNtUcc
 winter_consumption_90kmh_wh-km: 180
 winter_consumption_90kmh_wh-mi: 290
 winter_consumption_120kmh_wh-km: 
@@ -31,7 +31,7 @@ summer_range_vsource: https://www.youtube.com/watch?v=ZnYWWtUNykA
 bananaboxes_trunk: 8
 bananaboxes_folded_seats: 22
 bananaboxes_vsource: https://www.youtube.com/watch?v=KJFC1WA9YLs
-car_general_review_vsource:
+car_general_review_vsource: https://www.youtube-nocookie.com/embed/Us5fV1Oa2vo
 car_noise_80_kmh_db: 64.8
 car_noise_100_kmh_db: 66.8
 car_noise_120_kmh_db: 69.3

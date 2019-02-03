@@ -31,7 +31,7 @@ summer_range_vsource:
 bananaboxes_trunk: 5
 bananaboxes_folded_seats: 17
 bananaboxes_vsource: https://www.youtube.com/watch?v=UeGembqlJUM
-car_general_review_vsource:
+car_general_review_vsource: https://www.youtube-nocookie.com/embed/LFmiqbVXs-o
 car_noise_80_kmh_db: 65.0
 car_noise_100_kmh_db: 68.0
 car_noise_120_kmh_db: 70.0
