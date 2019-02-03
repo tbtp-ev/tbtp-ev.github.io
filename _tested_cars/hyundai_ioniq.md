@@ -23,11 +23,11 @@ summer_consumption_90kmh_wh-mi:
 summer_consumption_120kmh_wh-km: 
 summer_consumption_120kmh_wh-mi: 
 summer_consumption_vsource: 
-winter_range_90kmh_km: 
+winter_range_90kmh_km: 160
 winter_range_120kmh_km: 
-winter_range_vsource: https://www.youtube.com/watch?v=mFj7MPfDnRc
+winter_range_vsource: https://www.youtube.com/watch?v=DoJ8qBMrmJg
 summer_range_90kmh_km: 
-summer_range_120kmh_km: 140
+summer_range_120kmh_km:
 summer_range_vsource: 
 bananaboxes_trunk: 6
 bananaboxes_folded_seats: 16
