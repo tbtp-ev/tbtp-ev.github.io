@@ -1,4 +1,5 @@
 ---
+title: Kia Soul EV
 car_manufacturer: Kia
 car_name: Soul EV
 car_name_subtext: 30 kWh

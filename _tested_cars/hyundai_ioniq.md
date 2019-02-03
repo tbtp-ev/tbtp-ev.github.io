@@ -1,4 +1,5 @@
 ---
+title: Hyundai Ioniq
 car_manufacturer: Hyundai
 car_name: Ioniq
 car_name_subtext:

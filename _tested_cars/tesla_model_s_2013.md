@@ -1,4 +1,5 @@
 ---
+title: Tesla Model S Pre-Facelift
 car_manufacturer: Tesla
 car_name: Model S
 car_name_subtext: Pre-Facelift

@@ -1,4 +1,5 @@
 ---
+title: Kia e-Niro
 car_manufacturer: Kia
 car_name: e-Niro
 car_name_subtext:

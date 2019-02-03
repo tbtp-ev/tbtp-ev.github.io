@@ -1,4 +1,5 @@
 ---
+title: Opel Ampera-e
 car_manufacturer: Opel
 car_name: Ampera-e
 car_name_subtext:

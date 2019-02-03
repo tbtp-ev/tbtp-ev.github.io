@@ -1,4 +1,5 @@
 ---
+title: VW e-Golf 36 kWh
 car_manufacturer: VW
 car_name: e-Golf
 car_name_subtext: 36 kWh

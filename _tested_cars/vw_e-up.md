@@ -1,4 +1,5 @@
 ---
+title: VW e-up
 car_manufacturer: VW
 car_name: e-up
 car_name_subtext:

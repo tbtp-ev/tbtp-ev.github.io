@@ -1,4 +1,5 @@
 ---
+title: BMW i3 42 kWh
 car_manufacturer: BMW
 car_name: i3
 car_name_subtext: 42 kWh

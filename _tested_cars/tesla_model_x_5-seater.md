@@ -1,4 +1,5 @@
 ---
+title: Tesla Model X 5 Seater
 car_manufacturer: Tesla
 car_name: Model X
 car_name_subtext: 5 Seater

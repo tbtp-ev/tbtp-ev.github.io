@@ -1,4 +1,5 @@
 ---
+title: Jaguar I-pace
 car_manufacturer: Jaguar
 car_name: I-pace
 car_name_subtext:

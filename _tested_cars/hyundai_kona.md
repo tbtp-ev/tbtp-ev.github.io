@@ -1,4 +1,5 @@
 ---
+title: Hyundai Kona
 car_manufacturer: Hyundai
 car_name: Kona
 car_name_subtext:

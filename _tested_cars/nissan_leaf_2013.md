@@ -1,4 +1,5 @@
 ---
+title: Nissan Leaf 2013
 car_manufacturer: Nissan
 car_name: Leaf
 car_name_subtext: 2013

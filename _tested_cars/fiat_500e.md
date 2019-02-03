@@ -1,4 +1,5 @@
 ---
+title: Fiat 500e
 car_manufacturer: Fiat
 car_name: 500e
 car_name_subtext:
