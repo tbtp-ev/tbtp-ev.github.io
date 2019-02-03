@@ -27,12 +27,14 @@ If you want to know a detailed explanation how the data for test results is gath
 <tbody>
 
 {% for item in site.tested_cars %}
-    <tr>
-        <td markdown="span">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</td>
-        <td markdown="span">{{ item.bananaboxes_trunk }}</td>
-        <td markdown="span">{{ item.bananaboxes_folded_seats }}</td>
-        <td markdown="span"><a href="{{ item.bananaboxes_vsource }}" target="_blank">Testvideo</a></td>
-    </tr>
+    {% if item.bananaboxes_trunk != nil and item.bananaboxes_folded_seats != nil %}
+        <tr>
+            <td markdown="span">{{ item.car_manufacturer }} {{ item.car_name }} {{ item.car_name_subtext }}</td>
+            <td markdown="span">{{ item.bananaboxes_trunk }}</td>
+            <td markdown="span">{{ item.bananaboxes_folded_seats }}</td>
+            <td markdown="span"><a href="{{ item.bananaboxes_vsource }}" target="_blank">Testvideo</a></td>
+        </tr>
+    {% endif %}
 {% endfor %}
 
 </tbody>
