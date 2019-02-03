@@ -6,8 +6,8 @@ car_name_subtext: Performance
 car_release_year: 2017
 car_added_to_tbdp: 2018
 car_last_change_date:
-battery_size_available_kwh: 75 
-battery_size_rated_kwh: 72
+battery_size_available_kwh: 72 
+battery_size_rated_kwh: 75
 battery_size_vsource: https://www.youtube.com/watch?v=srgHN8Y9YMo
 weight_total: 
 weight_front_axle: 
