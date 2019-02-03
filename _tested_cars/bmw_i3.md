@@ -3,7 +3,7 @@ car_manufacturer: BMW
 car_name: i3
 car_name_subtext:
 car_release_year: 
-car_added_to_tbdp: 
+car_added_to_tbdp: 2016
 car_last_change_date:
 battery_size_available_kwh: 38
 battery_size_rated_kwh: 42

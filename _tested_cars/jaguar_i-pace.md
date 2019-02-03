@@ -3,7 +3,7 @@ car_manufacturer: Jaguar
 car_name: I-pace
 car_name_subtext:
 car_release_year: 
-car_added_to_tbdp: 
+car_added_to_tbdp: 2018
 car_last_change_date:
 battery_size_available_kwh: 81.5
 battery_size_rated_kwh: 90

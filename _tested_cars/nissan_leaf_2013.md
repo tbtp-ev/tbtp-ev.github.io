@@ -3,7 +3,7 @@ car_manufacturer: Nissan
 car_name: Leaf
 car_name_subtext: 2013
 car_release_year: 2013
-car_added_to_tbdp: 
+car_added_to_tbdp: 2016
 car_last_change_date:
 battery_size_available_kwh: 
 battery_size_rated_kwh: 

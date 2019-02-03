@@ -3,7 +3,7 @@ car_manufacturer: Kia
 car_name: Soul EV
 car_name_subtext: 30 kWh
 car_release_year: 
-car_added_to_tbdp: 
+car_added_to_tbdp: 2017
 car_last_change_date:
 battery_size_available_kwh: 30
 battery_size_rated_kwh: 30
