@@ -107,7 +107,7 @@ layout: default
     {% endif %}
     
     {% if page.summer_consumption_90kmh_wh-km != nil or page.summer_consumption_120kmh_wh-km != nil or page.summer_consumption_90kmh_wh-mi != nil or page.summer_consumption_120kmh_wh-mi != nil %}    
-        <h2 class="clickable-header top-level-header">Summer range</h2>
+        <h2 class="clickable-header top-level-header">Summer consumption</h2>
         You can compare the summer consumption of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-consumption.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_consumption-test.html">here.</a><br><br>
         <table style="width: 100%;">
         <colgroup>
@@ -269,7 +269,7 @@ layout: default
     {% endif %}
     
     
-    {% if page.car_noise_80_kmh_db != nil and page.car_noise_100_kmh_db != nil and page.car_noise_120_kmh_db != nil %}    
+    {% if page.weight_total != nil and page.weight_front_axle != nil and page.weight_rear_axle != nil %}    
         <h2 class="clickable-header top-level-header">Weight distribution test</h2>
         You can compare the weight distribution of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-weight.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_noise-weight.html">here.</a><br><br>
         <table style="width: 100%;" id="data_table">
