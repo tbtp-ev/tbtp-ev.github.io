@@ -131,10 +131,26 @@ layout: default
         <tbody>
                 <tr>
                     <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
-                    <td markdown="span">{{ page.summer_consumption_90kmh_wh-km }} Wh/km</td>
-                    <td markdown="span">{{ page.summer_consumption_90kmh_wh-mi }} Wh/mi</td>
-                    <td markdown="span">{{ page.summer_consumption_120kmh_wh-km }} Wh/km</td>
-                    <td markdown="span">{{ page.summer_consumption_120kmh_wh-mi }} Wh/mi</td>
+                {% if page.summer_consumption_90kmh_wh-km != nil %}
+                    <td markdown="span">{{ page.summer_consumption_90kmh_wh-km }}  Wh/km</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
+                {% if page.summer_consumption_90kmh_wh-mi != nil %}
+                    <td markdown="span">{{ page.summer_consumption_90kmh_wh-mi }}  Wh/mi</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
+                {% if page.summer_consumption_120kmh_wh-km != nil %}
+                    <td markdown="span">{{ page.summer_consumption_120kmh_wh-km }}  Wh/km</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
+                {% if page.summer_consumption_120kmh_wh-mi != nil %}
+                    <td markdown="span">{{ page.summer_consumption_120kmh_wh-mi }}  Wh/mi</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
                     <td markdown="span"><a href="{{ page.summer_consumption_vsource }}" target="_blank">Testvideo</a></td>
                 </tr>
         </tbody>
@@ -143,7 +159,7 @@ layout: default
     
     
      {% if page.winter_consumption_90kmh_wh-km != nil or page.winter_consumption_120kmh_wh-km != nil or page.winter_consumption_90kmh_wh-mi != nil or page.winter_consumption_120kmh_wh-mi != nil %}    
-        <h2 class="clickable-header top-level-header">Winter range</h2>
+        <h2 class="clickable-header top-level-header">Winter consumption</h2>
         You can compare the winter consumption of {{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }} to other cars <a href="tbtp-results-consumption.html">here.</a> To learn more about the test procedure click <a href="tbtp_explained_consumption-test.html">here.</a><br><br>
         <table style="width: 100%;">
         <colgroup>
@@ -167,10 +183,26 @@ layout: default
         <tbody>
                 <tr>
                     <td markdown="span">{{ page.car_manufacturer }} {{ page.car_name }} {{ page.car_name_subtext }}</td>
-                    <td markdown="span">{{ page.winter_consumption_90kmh_wh-km }} Wh/km</td>
-                    <td markdown="span">{{ page.winter_consumption_90kmh_wh-mi }} Wh/mi</td>
-                    <td markdown="span">{{ page.winter_consumption_120kmh_wh-km }} Wh/km</td>
-                    <td markdown="span">{{ page.winter_consumption_120kmh_wh-mi }} Wh/mi</td>
+                {% if page.winter_consumption_90kmh_wh-km != nil %}
+                    <td markdown="span">{{ page.winter_consumption_90kmh_wh-km }}  Wh/km</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
+                {% if page.winter_consumption_90kmh_wh-mi != nil %}
+                    <td markdown="span">{{ page.winter_consumption_90kmh_wh-mi }}  Wh/mi</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
+                {% if page.winter_consumption_120kmh_wh-km != nil %}
+                    <td markdown="span">{{ page.winter_consumption_120kmh_wh-km }}  Wh/km</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
+                {% if page.winter_consumption_120kmh_wh-mi != nil %}
+                    <td markdown="span">{{ page.winter_consumption_120kmh_wh-mi }}  Wh/mi</td>
+                {% else %}
+                    <td markdown="span">-</td>
+                {% endif %}
                     <td markdown="span"><a href="{{ page.winter_consumption_vsource }}" target="_blank">Testvideo</a></td>
                 </tr>
         </tbody>
