@@ -32,7 +32,7 @@ summer_range_vsource:
 bananaboxes_trunk: 
 bananaboxes_folded_seats: 
 bananaboxes_vsource: 
-car_general_review_vsource:
+car_general_review_vsource: https://www.youtube-nocookie.com/embed/ooxNIz9rGfg
 car_noise_80_kmh_db: 
 car_noise_100_kmh_db: 
 car_noise_120_kmh_db: 
