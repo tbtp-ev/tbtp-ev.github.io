@@ -20,8 +20,8 @@ If you want to know a detailed explanation how the data for test results is gath
 <thead>
 <tr class="header">
 <th>Car Model</th>
-<th>70 km/h</th>
-<th>90 km/h</th>
+<th>80 km/h</th>
+<th>100 km/h</th>
 <th>120 km/h</th>
 <th>Source</th>
 </tr>
