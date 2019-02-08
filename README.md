@@ -1,6 +1,8 @@
 # Tesla Bjørn Test Procedure (TBTP)
 This repository contains the website for Tesla Bjørn Test Procedure. TBTP is a set of tests and measurements for EVs developed by YouTuber [Bjørn Nyland](https://www.youtube.com/user/bjornnyland). It was developed to cover use cases and usage scenarios not tested by other test procedures. This site is powered by Jekyll and live on Github pages: [tbtp-ev.github.io](https://tbtp-ev.github.io)
 
+![](https://github.com/tbtp-ev/tbtp-ev.github.io/blob/master/images/TBTP_Website_1.PNG?raw=true)
+
 # Information about test results
 This repository is intended to gather all test results of TBTP in one place so they can easily be compared and all related videos are easily accessible. This would not have been possible without tesla Björn / [Bjørn Nyland](https://www.youtube.com/user/bjornnyland) who invests time and money to test as many cars as possible. Please support whenever and whereever you can:
 
@@ -8,6 +10,8 @@ This repository is intended to gather all test results of TBTP in one place so t
 * [YouTube](https://www.youtube.com/channel/UCG1QcV31eoSaX4rE8avQL4A)
 * [Streamlabs](https://streamlabs.com/bjrnnyland)
 * [Patreon](https://www.patreon.com/Teslabjorn)
+
+![](https://github.com/tbtp-ev/tbtp-ev.github.io/blob/master/images/TBTP_Website_2.PNG?raw=true)
 
 # Modifying page contents
 If you want to modify any of the pages you can fork this repository, make your changes and issue a pull request. Every page is generated from markdown files e.h. "index.md".
