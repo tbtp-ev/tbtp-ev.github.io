@@ -9,15 +9,15 @@ car_last_change_date:
 battery_size_available_kwh: 81.5
 battery_size_rated_kwh: 90
 battery_size_vsource: https://www.youtube.com/watch?v=0QxPw0gWAoQ
-weight_total: 
-weight_front_axle: 
-weight_rear_axle: 
-weight_vsource: 
-winter_consumption_90kmh_wh-km: 
-winter_consumption_90kmh_wh-mi: 
-winter_consumption_120kmh_wh-km: 
-winter_consumption_120kmh_wh-mi: 
-winter_consumption_vsource: 
+weight_total: 2340
+weight_front_axle: 1240
+weight_rear_axle: 1100
+weight_vsource: https://www.youtube.com/watch?v=4w608sQ9DNE
+winter_consumption_90kmh_wh-km: 229
+winter_consumption_90kmh_wh-mi: 369
+winter_consumption_120kmh_wh-km: 311
+winter_consumption_120kmh_wh-mi: 501
+winter_consumption_vsource: https://www.youtube.com/watch?v=4w608sQ9DNE
 summer_consumption_90kmh_wh-km: 214
 summer_consumption_90kmh_wh-mi: 344
 summer_consumption_120kmh_wh-km: 
