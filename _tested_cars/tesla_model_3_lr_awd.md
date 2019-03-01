@@ -29,9 +29,9 @@ winter_range_vsource:
 summer_range_90kmh_km: 560
 summer_range_120kmh_km: 
 summer_range_vsource: https://www.youtube.com/watch?v=KJpz5imqW5U
-bananaboxes_trunk: 
-bananaboxes_folded_seats: 
-bananaboxes_vsource: 
+bananaboxes_trunk: 6
+bananaboxes_folded_seats: 17
+bananaboxes_vsource: https://www.youtube.com/watch?v=2OM1UsEAPe4
 car_general_review_vsource:
 car_noise_80_kmh_db: 
 car_noise_100_kmh_db: 
