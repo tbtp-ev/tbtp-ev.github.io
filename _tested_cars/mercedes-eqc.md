@@ -13,13 +13,13 @@ weight_total: 2620
 weight_front_axle: 1260
 weight_rear_axle: 1380
 weight_vsource: https://www.youtube.com/watch?v=_EfKlY61yw8
-winter_consumption_90kmh_wh-km: 184
-winter_consumption_90kmh_wh-mi: 296
+winter_consumption_90kmh_wh-km: 
+winter_consumption_90kmh_wh-mi: 
 winter_consumption_120kmh_wh-km: 
 winter_consumption_120kmh_wh-mi: 
 winter_consumption_vsource: 
-summer_consumption_90kmh_wh-km: 
-summer_consumption_90kmh_wh-mi: 
+summer_consumption_90kmh_wh-km: 184
+summer_consumption_90kmh_wh-mi: 296
 summer_consumption_120kmh_wh-km: 
 summer_consumption_120kmh_wh-mi: 
 summer_consumption_vsource: https://www.youtube.com/watch?v=_EfKlY61yw8
